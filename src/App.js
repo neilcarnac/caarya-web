@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/communityconnect" element={<CommunityConnect />} />
           <Route path="/infocards" element={<InfoCards />} />
-          <Route path="/quest" element={<Quests />} />
+          <Route path="/quests" element={<Quests />} />
           <Route path="/experiencemaps" element={<ExperienceMaps />} />
         </Routes>
       </BrowserRouter>

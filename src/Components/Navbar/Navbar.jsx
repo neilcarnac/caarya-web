@@ -1,23 +1,39 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <>
-    <header>
-    <a href="#">Logo</a>
-    <nav>
-      <ul>
-        <li><a href="#">Spaceship</a></li>
-        <li><a href="#">Community Connect</a></li>
-        <li><a href="#">Infocards</a></li>
-        <li><a href="#">Quests</a></li>
-        <li><a href="#">Experience Maps</a></li>
+    <nav className="navbar">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <NavLink exact to="/" className="nav-link">
+            Spaceship
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/communityconnect" className="nav-link">
+            Community Connect
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/infocards" className="nav-link">
+            Infocards
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/quests" className="nav-link">
+            Quests
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/experiencemaps" className="nav-link">
+            Experience Maps
+          </NavLink>
+        </li>
       </ul>
     </nav>
+  );
+};
 
-    </header>
-    </>
-  )
-}
-
-export default Navbar
+export default Navbar;
