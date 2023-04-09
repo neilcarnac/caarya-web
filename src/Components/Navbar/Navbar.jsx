@@ -3,6 +3,9 @@ import { Link as RouterLink } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Link } from '@mui/material';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { motion } from "framer-motion";
+
+
 const Navbar = () => {
   return (
     <AppBar sx={{boxShadow: '3px 3px 3px rgba(0, 0, 0, 0.1)' }} position="static" color="inherit" elevation={0}>
