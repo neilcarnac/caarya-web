@@ -1,13 +1,33 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Link } from '@mui/material';
+import { AppBar, Toolbar, Typography, Link, Box } from '@mui/material';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { motion } from "framer-motion";
 
+const navbarAnimation = {
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      delay: 0.5,
+      duration: 2.3,
+    }
+  }
+}
 
 const Navbar = () => {
   return (
+    <Box>
+    <motion.div
+    variants={navbarAnimation}
+    initial="hidden"
+    animate = "visible">
     <AppBar sx={{boxShadow: '3px 3px 3px rgba(0, 0, 0, 0.1)' }} position="static" color="inherit" elevation={0}>
       <Toolbar sx={{ textalign:"center" }}>
         <Typography variant="h6" color="magenta">
@@ -88,6 +108,8 @@ const Navbar = () => {
         </nav>
       </Toolbar>
     </AppBar>
+    </motion.div>
+    </Box>
   );
 };
 
