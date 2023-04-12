@@ -1,39 +1,33 @@
-import { Grid } from '@material-ui/core';
 import CardItem from '../CardItem/CardItem';
+import Stack from '@mui/material/Stack';
+import { Divider } from '@mui/material';
 
 function Resources() {
   return (
-    <Grid container spacing={2}>
-      <Grid
-        style={{ marginLeft: "600px" }}
-        item xs={6}>
-        <CardItem
-          title="prove to me"
-        />
-      </Grid>
-      <Grid
-        style={{ marginLeft: "1000px" }}
+    <>
+      <Stack direction={['column', 'row']} spacing="2">
+        <Stack marginLeft="500px" flex="1" bg="gray.100" height="100%" justifyContent="center" alignItems="center">
+          <CardItem
+            title="Purpose and PLanning" />
+        </Stack>
+        <Stack paddingLeft="15px" flex="1" bg="gray.200" height="100%" justifyContent="center" alignItems="center">
+          <CardItem
+            title="Tools & Mentorship" />
+        </Stack>
+      </Stack>
+      <Stack direction={['column', 'row']} spacing="2">
+        <Stack paddingTop="20px" marginLeft="500px" flex="1" bg="gray.100" height="100%" justifyContent="center" alignItems="center">
+          <CardItem
+            title="Purpose and PLanning" />
+        </Stack>
+        <Stack paddingTop="20px" paddingLeft="10px" flex="1" bg="gray.200" height="100%" justifyContent="center" alignItems="center">
+          <CardItem
+            />
+        </Stack>
+      </Stack>
+      
 
-        item xs={6}>
-        <CardItem
-          title="prove to me"
-        />
-      </Grid>
-      <Grid
-        style={{ marginLeft: "600px", marginTop:"500px"}}
-        item xs={6}>
-        <CardItem
-          title="prove to me"
-        />
-      </Grid>
-      <Grid
-        style={{ marginLeft: "1000px" }}
-        item xs={6}>
-        <CardItem
-          title="prove to me"
-        />
-      </Grid>
-    </Grid>
+    </>
   );
 }
 

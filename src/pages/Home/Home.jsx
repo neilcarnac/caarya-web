@@ -9,15 +9,15 @@ import CardItem from '../../Components/CardItem/CardItem'
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import { PropTypes } from '@mui/material'
 import Resources from '../../Components/Resources/Resources'
-
+import Doctext from '../../Components/DocText/Doctext'
 const Home = () => {
   return (
   <>
     <Navbar />
     <Rectangle />
     <FoldForm />
-    
-    {/* <Resources /> */}
+    <Doctext />
+    <Resources />
     {/* <Motionprac />     */}
   </>
   )
