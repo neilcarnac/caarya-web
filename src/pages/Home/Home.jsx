@@ -5,12 +5,19 @@ import { motion } from 'framer-motion'
 import Motionprac from '../../Components/Motions/MotionPrac/Motionprac'
 import Rectangle from '../../Components/Rectangle/Rectangle'
 import FoldForm from '../../Components/FoldForm/FoldForm'
+import CardItem from '../../Components/CardItem/CardItem'
+import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import { PropTypes } from '@mui/material'
+import Resources from '../../Components/Resources/Resources'
+
 const Home = () => {
   return (
   <>
     <Navbar />
     <Rectangle />
     <FoldForm />
+    
+    {/* <Resources /> */}
     {/* <Motionprac />     */}
   </>
   )

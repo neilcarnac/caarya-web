@@ -4,7 +4,9 @@ import { AppBar, Toolbar, Typography, Link, Box, TextField } from '@mui/material
 const FoldForm = () => {
   return (
     <>
-    <Box>
+    <Box
+    width="400px"
+    >
     <Box
     backgroundColor="white"
     height="500px"

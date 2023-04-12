@@ -74,7 +74,7 @@ const Rectangle = () => {
           borderRadius="600px"
           ml={130}
           mt={-20}
-          backgroundColor="#b987b9"
+          backgroundColor="#ead6ea"
           >
           </Box>
           
