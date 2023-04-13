@@ -34,10 +34,10 @@ const Rectangle = () => {
             width="101.69%"
             height="300px"
             overflow="hidden"
-            backgroundColor="#e2c8e2">
+            backgroundColor="#e2d2ea">
           
           <Typography
-            variant="h6"
+            variant="h5"
            
             sx={{
               ml: 7,
@@ -52,10 +52,10 @@ const Rectangle = () => {
               </span> 
             </Typography>
           <Typography
-            variant="h6"
+            variant="h5"
            
             sx={{
-              ml: 31,
+              ml: 34,
               mt: -4,
               textTransform: 'capitalize',
               FontFamily: "Poppins",
@@ -74,7 +74,7 @@ const Rectangle = () => {
           borderRadius="600px"
           ml={130}
           mt={-20}
-          backgroundColor="#ead6ea"
+          backgroundColor="#dbc7e3"
           >
           </Box>
           

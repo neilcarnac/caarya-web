@@ -12,7 +12,7 @@ const Doctext = () => {
            
             sx={{
               ml: 65,
-              mt: -63,
+              mt: -69,
               textTransform: 'capitalize',
               FontFamily: "Poppins",
             //   FontSize: 4r,
@@ -39,11 +39,10 @@ const Doctext = () => {
                 </span>
             </Typography>
             <Typography
-                variant="h6"
-
+                variant="h7"
                 sx={{
                     ml: 65,
-                    mt: 0,
+                    mt: 10,
                     textTransform: 'capitalize',
                     FontFamily: "Poppins",
                     color: 'black',

@@ -125,10 +125,10 @@ const FoldForm = () => {
               <br />
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               variants={Titleone}
               initial="hidden"
-              animate="visible">
+              animate="visible"> */}
               <TextField
                 id="title"
                 label="title"
@@ -136,12 +136,12 @@ const FoldForm = () => {
                 backgroundColor="#caca6d"
               >
           </TextField>
-            </motion.div>
+            {/* </motion.div> */}
           <br />
-          <motion.div
+          {/* <motion.div
               variants={Titleone}
               initial="hidden"
-              animate="visible">
+              animate="visible"> */}
           <TextField
             id="description"
             label="description"
@@ -149,12 +149,12 @@ const FoldForm = () => {
 
           >
           </TextField>
-          </motion.div>
+          {/* </motion.div> */}
           <br />
-          <motion.div
-              variants={Itemanimationwords}
+          {/* <motion.div
+              variants={Itemanimationwords} 
               initial="hidden"
-              animate="visible">
+              animate="visible"> */}
           <Typography
             variant='h7'
           >
@@ -162,7 +162,7 @@ const FoldForm = () => {
               Add Tags/Keywords
             </span>
           </Typography>
-          </motion.div>
+          {/* </motion.div> */}
 
           <motion.div
               variants={Itemanimation}
@@ -248,10 +248,10 @@ const FoldForm = () => {
           </motion.div>
 
           <br />
-          <motion.div
+          {/* <motion.div
               variants={Titleone}
               initial="hidden"
-              animate="visible">
+              animate="visible"> */}
           <TextField
             id="title"
             label="title"
@@ -280,7 +280,7 @@ const FoldForm = () => {
 
           <br />
           <InvertingButton />
-          </motion.div>
+          {/* </motion.div> */}
         </form>
       </Box>
       </motion.div>
