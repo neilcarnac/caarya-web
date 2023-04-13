@@ -5,15 +5,31 @@ import { motion } from 'framer-motion'
 const RectangleAnimation = {
   hidden: {
     opacity: 0,
-    x: '-200vw',
+    y: '100px',
   },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
+    transition: {
+      types: "spring",
+      delay: 0.3,
+      duration: 1.3,
+    }
+  }
+}
+
+const RectangleAnimationtwo = {
+  hidden: {
+    opacity: 0,
+    y: '-100px',
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
     transition: {
       type: "spring",
-      delay: 0.5,
-      duration: 2.3,
+      delay: 0.3,
+      duration: 1.3,
     }
   }
 }
@@ -25,10 +41,6 @@ const Rectangle = () => {
       my={1}
       >
 
-        <motion.div
-          variants={RectangleAnimation}
-          initial="hidden"
-          animate="visible">
           <Box
           ml={-2}
             width="101.69%"
@@ -36,6 +48,10 @@ const Rectangle = () => {
             overflow="hidden"
             backgroundColor="#e2d2ea">
           
+              <motion.div
+                variants={RectangleAnimation}
+                initial="hidden"
+                animate="visible">
           <Typography
             variant="h5"
            
@@ -51,6 +67,11 @@ const Rectangle = () => {
                 Knowledge Building
               </span> 
             </Typography>
+            </motion.div>
+            <motion.div
+                variants={RectangleAnimationtwo}
+                initial="hidden"
+                animate="visible">
           <Typography
             variant="h5"
            
@@ -66,7 +87,7 @@ const Rectangle = () => {
                 <i>Quests</i>
               </span> 
             </Typography>
-
+            </motion.div>
           <Box
           width="500px"
           height="500px"
@@ -81,7 +102,6 @@ const Rectangle = () => {
             
           
           </Box>
-        </motion.div>
 
       </Box>
     </>
